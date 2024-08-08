@@ -77,3 +77,23 @@ Here’s a breakdown of the Laravel folder structure and the purpose of each fol
 -   vite.config.js: Configuration file for Vite, which is used for bundling your frontend assets.
 
 ## Git
+
+Run the following command to initialize Git:
+
+```bash
+git init
+```
+
+This will create the .git folder in your project. Next, add and commit your files:
+
+```bash
+git add .
+git commit -am 'feat: Node project setup'
+```
+
+Create a repository on GitHub and push your code:
+
+```bash
+git remote add origin https://github.com/your-username/your-repo.git
+git push origin master
+```
