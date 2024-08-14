@@ -131,8 +131,6 @@ Install Prettier as a dev dependency:
 
 ```bash
 npm install --save-dev --save-exact prettier
-
-
 ```
 
 Also, use the Prettier code formatter extension for VS Code:
@@ -152,4 +150,3 @@ Create a `.prettierrc` file in the root directory of your project and define you
     "endOfLine": "crlf"
 }
 ```
-
