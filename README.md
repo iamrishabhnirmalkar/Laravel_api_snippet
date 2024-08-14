@@ -3,6 +3,8 @@
 -   [Setup Laravel](#setup-laravel)
 -   [Laravel Folder Structure](#laravel-folder-structure)
 -   [Git](#git)
+-   [Husky]
+-   [Prettier]
 
 ## Setup Laravel
 
@@ -97,3 +99,57 @@ Create a repository on GitHub and push your code:
 git remote add origin https://github.com/your-username/your-repo.git
 git push origin master
 ```
+
+## Husky
+
+### About Husky
+
+Husky is a popular tool used in Git repositories to manage and enforce Git hooks. Git hooks are scripts that Git executes before or after events such as committing, pushing, and receiving changes.
+
+Install Husky and lint-staged:
+
+```bash
+npm i husky lint-staged -D
+```
+
+Initialize Husky:
+
+```bash
+npx husky init
+```
+
+After this, the .husky folder will be created. Create a pre-commit hook:
+
+## Prettier
+
+### About
+
+Prettier is an opinionated code formatter that enforces a consistent style by parsing your code and reprinting it with its own rules that take the maximum line length into account, wrapping code when necessary. It supports many languages and integrates with most editors.
+[Prettier](https://prettier.io/)
+
+Install Prettier as a dev dependency:
+
+```bash
+npm install --save-dev --save-exact prettier
+
+
+```
+
+Also, use the Prettier code formatter extension for VS Code:
+
+[Prettier - Code formatter by Prettier] (https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+Create a `.prettierrc` file in the root directory of your project and define your preferred Prettier rules. Here’s an example configuration:
+
+```json
+{
+    "trailingComma": "none",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 150,
+    "singleAttributePerLine": true,
+    "endOfLine": "crlf"
+}
+```
+
